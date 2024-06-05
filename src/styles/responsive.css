@@ -1,0 +1,116 @@
+@media screen and (max-width: 550px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../public/images/heros/hero-image_2-small.jpg);
+  }
+  #navigationDrawer {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 90px;
+    transform: translate(-500px, 0);
+  }
+
+  #navigationDrawer li {
+    display: block;
+  }
+
+  #navigationDrawer a {
+    display: block;
+    color: black;
+  }
+
+  #navigationDrawer.open {
+    transform: translate(0, 0);
+  }
+
+  #navigationDrawer ul {
+    display: block;
+  }
+
+  #hamburgerButton {
+    display: block;
+  }
+  .review-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .resto-name {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .menu-list li {
+    font-size: 0.8rem;
+  }
+  .review-card h5 {
+    font-size: 0.9rem;
+  }
+  .review-card h6 {
+    font-size: 0.7rem;
+  }
+  .column {
+    flex: 100%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../public/images/heros/hero-image_2-large.jpg);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .restaurants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .restaurant {
+    grid-template-columns: auto 1fr;
+  }
+
+  .restaurant .restaurant__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .review-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .resto-name {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .menu-list li {
+    font-size: 0.9rem;
+  }
+  .review-card h5 {
+    font-size: 1rem;
+  }
+  .review-card h6 {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .restaurants {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
